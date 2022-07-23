@@ -1,4 +1,5 @@
 syntax = "proto3";
+package ttt;
 
 service Game {
     rpc Connect (stream Request) return (stream Responce);
@@ -6,10 +7,10 @@ service Game {
 
 message Request {
     string type = 1;
-    repeated int8 payload = 2;
+    bytes payload = 2;
 }
 
 message Responce {
     string type = 1;
-    repeated int8 payload = 2;
+    bytes payload = 2;
 }
