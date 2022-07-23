@@ -2,7 +2,7 @@ syntax = "proto3";
 package ttt;
 
 service Game {
-    rpc Connect (stream Message) return (stream Message);
+    rpc Connect (stream Message) returns (stream Message);
 }
 
 message Message {
