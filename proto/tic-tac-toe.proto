@@ -1,4 +1,5 @@
 syntax = "proto3";
+package proto_client;
 
 service Game {
     rpc Connect (stream Request) return (stream Responce);
